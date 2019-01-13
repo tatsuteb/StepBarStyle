@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Step Bar Style Demo</title>
     <link rel="stylesheet" href="../dist/css/step-bar.min.css">
 </head>
 
 <body>
+    <h2>使用例</h2>
     <div>
-        <h2>タイトルが上にあるタイプ</h2>
+        <h4>タイトルが上にあるタイプ</h4>
         <ul class="step-bar">
             <li class="step">
                 <span class="step__title">カート</span>
@@ -35,7 +36,7 @@
     </div>
 
     <div>
-        <h2>タイトルが下にあるタイプ</h2>
+        <h4>タイトルが下にあるタイプ</h4>
         <ul class="step-bar is-title-bottom">
             <li class="step">
                 <span class="step__title">カート</span>
@@ -45,7 +46,7 @@
                 <span class="step__title">ログイン</span>
                 <p class="step__text">本人確認</p>
             </li>
-            <li class="step is-active">
+            <li class="step">
                 <span class="step__title">お支払方法</span>
             </li>
             <li class="step">
@@ -59,7 +60,7 @@
     </div>
 
     <div>
-        <h2>バーの色も変わるタイプ</h2>
+        <h4>バーの色も変わるタイプ</h4>
         <ul class="step-bar">
             <li class="step is-active">
                 <span class="step__title">カート</span>
@@ -81,6 +82,8 @@
             </li>
         </ul>
     </div>
+
+    <p>_variables.scss の変数を上書きしてカスタマイズすれば、ボーダーを出したり塗りを変えることも可能。README参照。</p>
 </body>
 
 </html>
