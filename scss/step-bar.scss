@@ -1,0 +1,140 @@
+@import './variables';
+
+.step-bar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-size: $base-font-size;
+    justify-content: flex-start;
+
+    .step {
+        counter-increment: step;
+        position: relative;
+        display: grid;
+        grid-template-rows: $title-font-size $num-size auto;
+        grid-row-gap: 5px;
+        margin: 0;
+        padding: 0;
+        width: $step-width;
+        box-sizing: inherit;
+        font-size: inherit;
+        justify-items: center;
+
+        &__title {
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            line-height: 1.25;
+            color: $title-color;
+            font-size: $title-font-size;
+            font-weight: 700;
+        }
+
+        &__text {
+            grid-row: -2;
+            margin: 0;
+            padding: 0;
+            line-height: 1.25;
+            color: $text-color;
+            font-size: $text-font-size;
+            text-align: center;
+        }
+
+        // Step number.
+        &::after {
+            content: counter(step);
+            grid-row: 2;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: $num-size;
+            height: $num-size;
+            box-sizing: inherit;
+            background-color: $num-background-color;
+            border: $num-border-width solid $num-border-color;
+            border-radius: $num-size;
+            color: $num-color;
+            font-size: $num-font-size;
+            font-weight: 700;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        // Progress bar.
+        &:not(:first-child) {
+            &::before {
+                content: "";
+                grid-row: 2;
+                position: absolute;
+                display: block;
+                margin: 0;
+                padding: 0;
+                top: (($num-size - $bar-height) / 2);
+                left: -(($step-width - $num-size) / 2 + $num-border-width);
+                width: $step-width - $num-size + $num-border-width * 2;
+                height: $bar-height;
+                box-sizing: inherit;
+                background-color: $bar-background-color;
+                border: $bar-border-width solid $bar-border-color;
+            }
+        }
+
+        // Active step.
+        &.is-active {
+            .step__title {
+                color: $title-active-color;
+            }
+            .step__text {
+                color: $text-active-color;
+            }
+            // Step num.
+            &::after {
+                color: $num-active-color;
+                border-color: $num-border-active-color;
+                background-color: $num-background-active-color;
+            }
+        }
+
+        // Active step with bar.
+        &.is-active-bar {
+            @extend .is-active;
+
+            // Progress bar.
+            &:not(:first-child) {
+                &::before {
+                    border-color: $bar-border-active-color;
+                    background-color: $bar-background-active-color;
+                }
+            }
+        }
+    }
+
+    // Bottom title layout.
+    &.is-title-bottom {
+        .step {
+            grid-template-rows: $num-size $title-font-size auto;
+            &__title {
+                grid-row: 2;
+            }
+    
+            &__text {
+                grid-row: -2;
+            }
+    
+            // Step number.
+            &::after {
+                grid-row: 1;
+            }
+    
+            // Progress bar.
+            &:not(:first-child) {
+                &::before {
+                    grid-row: 1;
+                }
+            }
+        }
+    }
+}
