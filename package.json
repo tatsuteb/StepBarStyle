@@ -1,0 +1,32 @@
+{
+  "name": "stepbar",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "tasks": "./node_modules/.bin/gulp --tasks",
+    "clean": "./node_modules/.bin/gulp clean",
+    "cleanRelease": "./node_modules/.bin/gulp cleanRelease",
+    "build": "./node_modules/.bin/gulp build",
+    "buildRelease": "./node_modules/.bin/gulp buildRelease",
+    "watch": "./node_modules/.bin/gulp watch",
+    "watchRelease": "./node_modules/.bin/gulp watchRelease"
+  },
+  "author": "tatsuteb",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/gulp": "^4.0.5",
+    "@types/gulp-sass": "0.0.31",
+    "@types/node": "^10.12.18",
+    "autoprefixer": "^9.4.5",
+    "delete": "^1.1.0",
+    "gulp": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-sass": "^4.11.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}

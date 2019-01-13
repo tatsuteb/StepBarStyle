@@ -1,0 +1,38 @@
+$base-font-size: 10pt !default;
+$step-width: 100px !default;
+
+/*
+ *  Step num.
+ */
+$num-size: 32px !default;
+$num-border-width: 3px !default;
+$num-font-size: 1.2em !default;
+$num-background-color: #bebebe !default;
+$num-border-color: #bebebe !default;
+$num-color: white !default;
+// active
+$num-background-active-color: #598eff !default;
+$num-border-active-color: #598eff !default;
+$num-active-color: white !default;
+
+/*
+ *  Step bar.
+ */
+$bar-height: 6px !default;
+$bar-border-width: 2px !default;
+$bar-background-color: #bebebe !default;
+$bar-border-color: #bebebe !default;
+// active
+$bar-background-active-color: #598eff !default;
+$bar-border-active-color: #598eff !default;
+
+/*
+ *  Step title and text.
+ */
+$title-font-size: 1.2em !default;
+$title-color: #bebebe !default;
+$text-font-size: 1em !default;
+$text-color: lighten(#bebebe, 10%) !default;
+// active
+$title-active-color: #598eff !default;
+$text-active-color: lighten(#598eff, 10%) !default;
