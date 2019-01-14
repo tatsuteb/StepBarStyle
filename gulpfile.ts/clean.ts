@@ -4,7 +4,7 @@ import { path } from './constants';
 
 function cleanScssDebug(cb)
 {
-    del([path.distDebugFiles, !path.distReleaseFiles], cb);
+    del([path.distDebugFiles, `!${path.distReleaseFiles}`], cb);
 }
 
 function cleanScssRelease(cb)

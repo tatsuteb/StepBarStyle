@@ -98,6 +98,8 @@
             }
         }
 
+
+        // NOTE: deprecated
         // Active step with bar.
         &.is-active-bar {
             @extend .is-active;
@@ -107,6 +109,53 @@
                 &::before {
                     border-color: $bar-border-active-color;
                     background-color: $bar-background-active-color;
+                }
+            }
+        }
+    }
+
+    // Active step with bar.
+    &.is-progress {
+        .step {
+            .step__title {
+                color: $title-active-color;
+            }
+            .step__text {
+                color: $text-active-color;
+            }
+            // Step num.
+            &::after {
+                color: $num-active-color;
+                border-color: $num-border-active-color;
+                background-color: $num-background-active-color;
+            }
+            // Progress bar.
+            &:not(:first-child) {
+                &::before {
+                    border-color: $bar-border-active-color;
+                    background-color: $bar-background-active-color;
+                }
+            }
+
+            &.is-active ~ .step {
+                .step__title {
+                    color: $title-color;
+                }
+                .step__text {
+                    color: $text-color;
+                }
+                // Step num.
+                &::after {
+                    color: $num-color;
+                    border-color: $num-border-color;
+                    background-color: $num-background-color;
+                }
+                // Progress bar.
+                &:not(:first-child) {
+                    &::before {
+                        border-color: $bar-border-color;
+                        background-color: $bar-background-color;
+                    }
                 }
             }
         }
