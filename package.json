@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "tasks": "./node_modules/.bin/gulp --tasks",
-    "clean": "./node_modules/.bin/gulp clean",
-    "cleanRelease": "./node_modules/.bin/gulp cleanRelease",
-    "build": "./node_modules/.bin/gulp build",
-    "buildRelease": "./node_modules/.bin/gulp buildRelease",
-    "watch": "./node_modules/.bin/gulp watch",
-    "watchRelease": "./node_modules/.bin/gulp watchRelease"
+    "tasks": "npx gulp --tasks",
+    "clean": "npx gulp clean",
+    "cleanRelease": "npx gulp cleanRelease",
+    "build": "npx gulp build",
+    "buildRelease": "npx gulp buildRelease",
+    "watch": "npx gulp watch",
+    "watchRelease": "npx gulp watchRelease"
   },
   "author": "tatsuteb",
   "license": "MIT",
