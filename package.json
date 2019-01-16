@@ -1,7 +1,7 @@
 {
   "name": "stepbar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Step bar style.",
   "scripts": {
     "tasks": "npx gulp --tasks",
     "clean": "npx gulp clean",
@@ -11,8 +11,20 @@
     "watch": "npx gulp watch",
     "watchRelease": "npx gulp watchRelease"
   },
-  "author": "tatsuteb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tatsuteb/StepBarStyle.git"
+  },
+  "keywords": ["css", "sass", "web"],
+  "author": "tatsuteb (https://github.com/tatsuteb)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tatsuteb/StepBarStyle/issues"
+  },
+  "homepage": "https://github.com/tatsuteb/StepBarStyle",
+  "style": "dist/css/step-bar.css",
+  "sass": "scss/step-bar.scss",
+  "unpkg": "dist/css/step-bar.css",
   "devDependencies": {
     "@types/gulp": "^4.0.5",
     "@types/gulp-sass": "0.0.31",
