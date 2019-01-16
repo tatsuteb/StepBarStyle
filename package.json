@@ -25,6 +25,10 @@
   "style": "dist/css/step-bar.css",
   "sass": "scss/step-bar.scss",
   "unpkg": "dist/css/step-bar.css",
+  "files": [
+    "dist/**/*.css",
+    "scss/**/*.scss"
+  ],
   "devDependencies": {
     "@types/gulp": "^4.0.5",
     "@types/gulp-sass": "0.0.31",
