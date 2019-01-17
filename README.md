@@ -50,3 +50,5 @@ $num-border-active-color: #a1e600;
 // 2. Import step-bar.scss
 @import './scss/step-bar';
 ```
+
+By overriding the _variables.scss variable and customizing it, it is also possible to change the paint or border.
