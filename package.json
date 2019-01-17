@@ -1,6 +1,6 @@
 {
   "name": "teb-step-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Step bar style.",
   "scripts": {
     "tasks": "npx gulp --tasks",

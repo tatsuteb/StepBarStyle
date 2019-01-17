@@ -1,65 +1,54 @@
 # Step Bar Style
 
-登録フォームやオンラインショッピングでよく見るステップタイプのプログレスバーを自作  
+This is the style of the step type progress bar used in registration forms, online shopping sites, etc.  
 
-<img src="https://user-images.githubusercontent.com/23710529/51089986-af101980-17b8-11e9-850b-3a09cfb6aaaa.png" />
+<img src="https://user-images.githubusercontent.com/23710529/51326046-9b62fc80-1ab1-11e9-96fd-a75c5cc6f36a.png" />
 
-# インストール
+# How to install
 
-1. [tatsuteb/StepBarStyle](https://github.com/tatsuteb/StepBarStyle.git) をクローン
+```
+npm i teb-step-bar
+```
 
-1. インストール
-    > ```npm install```
+# How to use
 
-1. ビルド
-    > ```npm run build```  
-    > ```npm run buildRelease```
-
-1. 自分のプロジェクトにコピー  
-    > ```./dist/css/step-bar.css```  
-    > ```./dist/css/step-bar.min.css```
-
-1. リンクを張る
-    > ```<link rel="stylesheet" href="./css/step-bar.css">```  
-    > ```<link rel="stylesheet" href="./css/step-bar.min.css">```
-
-# マークアップ
-
-詳しくは、 [./demo/index.html](./demo/index.html) 参照
+For details see [./demo/index.html](./demo/index.html)
 
 ```html
-<!-- ステップのタイトルが上、補足が下に配置される例 -->
+<!-- Example where title is above number, detail is under number -->
 <ul class="step-bar">
     <li class="step">
-        <span class="step__title">カート</span>
-        <p class="step__text">商品確認</p>
+        <span class="step__title">Cart</span>
+        <p class="step__text">Comfirm Items</p>
     </li>
     <li class="step is-active">
-        <span class="step__title">ログイン</span>
-        <p class="step__text">本人確認</p>
+        <span class="step__title">Log in</span>
+        <p class="step__text">Identification</p>
     </li>
     <li class="step">
-        <span class="step__title">お支払方法</span>
+        <span class="step__title">Payment</span>
     </li>
     <li class="step">
-        <span class="step__title">購入確認</span>
+        <span class="step__title">Purchase</span>
     </li>
     <li class="step">
-        <span class="step__title">完了</span>
-        <p class="step__text">ありがとうございます</p>
+        <span class="step__title">Complete</span>
+        <p class="step__text">Thank you!</p>
     </li>
 </ul>
 ```
 
-# カスタマイズ
+# How to customize
 
 ```scss
 // In your custom.scss
 
-// 1. _variables.scss にある変数を上書きする
+// 1. Overwrite variables in _variables.scss
 $num-background-active-color: #a1e600;
 $num-border-active-color: #a1e600;
 
-// 2. step-bar.scss をインポートする
+// 2. Import step-bar.scss
 @import './scss/step-bar';
 ```
+
+By overriding the _variables.scss variable and customizing it, it is also possible to change the paint or border.
