@@ -2,7 +2,7 @@
 
 This is the style of the step type progress bar used in registration forms, online shopping sites, etc.  
 
-<img src="https://user-images.githubusercontent.com/23710529/51089986-af101980-17b8-11e9-850b-3a09cfb6aaaa.png" />
+<img src="https://user-images.githubusercontent.com/23710529/51326046-9b62fc80-1ab1-11e9-96fd-a75c5cc6f36a.png" />
 
 # How to install
 
